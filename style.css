@@ -2,17 +2,36 @@ body{
     margin: 0;
 
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 16;
 
     display: flex;
+
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-size: cover;
 }
 
 .big_txt{
+    font-size: 70px;
+    font-weight: 300;
     max-width: 9ch;
+    letter-spacing: 0.2em;
+
+    color: hsl(0, 36%, 70%);
+
+    margin: 20px 0;
+}
+
+.bigger_txt{
+    font-weight: 600;
+
+    color: hsl(0, 6%, 24%);
 }
 
 .normal_txt{
+    font-weight: 400;
     max-width: 45ch; /*ch is kinda like numbers of characters*/
+    line-height: 1.8em;
+
+    color: hsl(0, 36%, 70%);
 }
 
 #flex_item1{
@@ -21,8 +40,18 @@ body{
 
     /*centers flexbox item without using margins*/
     flex: 1;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+#flex_item1 header{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+#flex_item1 main{
+    flex: 5;
 }
 
 aside{
@@ -31,4 +60,30 @@ aside{
 
 aside img{
     height: 100%;
+    display: block; /*for some reason this fixes the extra blank space below the image that occurs without it*/
+}
+
+#email_input{
+    font-family: 'Josefin Sans', sans-serif;
+    color: hsl(0, 36%, 70%);
+    font-size: 1em;
+
+    width: 100%;
+    padding: 15px 30px;
+    border: 1px solid hsl(0, 36%, 70%);
+    outline: none; /*removes blue highlight*/
+    border-radius: 50px;
+    margin: 30px 0 0 0;
+}
+
+#submit_button{
+    background-image: linear-gradient(to right, hsl(0, 80%, 86%) , hsl(0, 74%, 74%)); /*this adds the background gradient*/
+
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    cursor: pointer;
+
+    border-radius: 50px;
 }
