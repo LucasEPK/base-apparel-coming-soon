@@ -32,9 +32,9 @@
           Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
-        <form action="" id="buttons">
+        <form id="buttons">
           <input type="email" name="email" id="email_input" placeholder="Email Address">
-          <input type="image" src="images/icon-arrow.svg" id="submit_button"> <!--input type "image" is useful to put an image as a submit button without needing to use background image-->
+          <input type="image" src="images/icon-arrow.svg" id="submit_button" onclick="email_validation(document.getElementById('buttons').email)"> <!--input type "image" is useful to put an image as a submit button without needing to use background image-->
         </form>
       </section>
     </main>
@@ -43,6 +43,6 @@
   <aside id="flex_item2">
     <img src="images/hero-desktop.jpg" alt="photo of a girl wearing our fashion clothes">
   </aside>
-
+  <script src="email_val.js"></script>
 </body>
 </html>
