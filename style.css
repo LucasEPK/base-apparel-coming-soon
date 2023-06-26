@@ -34,6 +34,16 @@ body{
     color: hsl(0, 36%, 70%);
 }
 
+#error_txt{
+    margin-left: 31px;
+    font-size: 14px;
+    color: hsl(0, 93%, 68%);
+
+    /*this hides the text*/
+    display: none;
+    overflow: hidden;
+}
+
 #flex_item1{
     display: flex;
     flex-direction: column;
@@ -73,6 +83,7 @@ aside img{
 }
 
 #email_input{
+    grid-area: 1 / 1 / 2 / 2;
     display: block;
     z-index: 1;
 
@@ -87,7 +98,23 @@ aside img{
     border-radius: 50px;
 }
 
+#error_img{
+    /*we position it in the grid*/
+    z-index: 2;
+    grid-area: 1 / 1 / 2 / 2;
+
+    /*here we center the icon and put it to the right*/
+    justify-self: right;
+    align-self: center;
+
+    margin-right: 15px;
+
+    display: none;
+}
+
 #submit_button{
+    grid-area: 1 / 2 / 2 / 3;
+
     display: block;
     z-index: 2;
 

@@ -34,7 +34,9 @@
         </p>
         <form id="buttons">
           <input type="email" name="email" id="email_input" placeholder="Email Address">
+          <img id="error_img" src="images/icon-error.svg" alt="">
           <input type="image" src="images/icon-arrow.svg" id="submit_button" onclick="email_validation(document.getElementById('buttons').email)"> <!--input type "image" is useful to put an image as a submit button without needing to use background image-->
+          <p id="error_txt">Please provide a valid email</p>
         </form>
       </section>
     </main>
