@@ -17,30 +17,29 @@
 
 </head>
 <body>
-  <div id="flex_item1">
-    <header>
-      <img src="images/logo.svg" alt="base apparel logo" id="logo">
-    </header>
   
-    <main>
-      <section>
-        <h1 class="big_txt">
-          WE'RE <span class="bigger_txt">COMING SOON</span>
-        </h1>
-        
-        <p class="normal_txt">
-          Hello fellow shoppers! We're currently building our new fashion store. 
-          Add your email below to stay up-to-date with announcements and our launch deals.
-        </p>
-        <form id="buttons">
-          <input type="email" name="email" id="email_input" placeholder="Email Address">
-          <img id="error_img" src="images/icon-error.svg" alt="">
-          <input type="image" src="images/icon-arrow.svg" id="submit_button" onclick="email_validation(document.getElementById('buttons').email)"> <!--input type "image" is useful to put an image as a submit button without needing to use background image-->
-          <p id="error_txt">Please provide a valid email</p>
-        </form>
-      </section>
-    </main>
-  </div>
+  <header>
+    <img src="images/logo.svg" alt="base apparel logo" id="logo">
+  </header>
+
+  <main>
+    <section>
+      <h1 class="big_txt">
+        WE'RE <span class="bigger_txt">COMING SOON</span>
+      </h1>
+      
+      <p class="normal_txt">
+        Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <form id="buttons">
+        <input type="email" name="email" id="email_input" placeholder="Email Address">
+        <img id="error_img" src="images/icon-error.svg" alt="">
+        <input type="image" src="images/icon-arrow.svg" id="submit_button" onclick="email_validation(document.getElementById('buttons').email)"> <!--input type "image" is useful to put an image as a submit button without needing to use background image-->
+        <p id="error_txt">Please provide a valid email</p>
+      </form>
+    </section>
+  </main>
 
   <aside id="flex_item2">
     <img src="images/hero-desktop.jpg" alt="photo of a girl wearing our fashion clothes">
