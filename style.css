@@ -2,7 +2,7 @@ body{
     margin: 0;
 
     font-family: 'Josefin Sans', sans-serif;
-
+    /*this makes the body a grid with 2 rows and 2 columns*/
     display: grid;
     grid-template-rows: 1fr 4fr;
     grid-template-columns: 2fr 1fr;
@@ -140,12 +140,14 @@ aside img{
 @media(max-width:800px){
     body{
         max-height: 800px; /*same height as design image*/
+        /*this changes the body to a grid with 3 rows and 1 column*/
         display: grid;
         grid-template-rows: 1fr 3fr 6fr;
         grid-template-columns: 1fr;
     }
 
     .big_txt{
+        max-width: 13ch; /*this centers the text*/
         font-size: 2.5rem;
     }
 
@@ -157,11 +159,11 @@ aside img{
 
     header{
         grid-area: 1/1/2/2;
-        width: 80vw;
+        width: 80vw;/*this adds some margin*/
     }
 
     header img{
-        width: 35%;
+        width: 35%;/*changes size of img*/
     }
 
     main{
@@ -182,6 +184,7 @@ aside img{
     }
 
     #buttons{
+        /*fixes size of the button*/
         grid-template-columns: 5fr 1fr;
         width: 85vw;
     }
